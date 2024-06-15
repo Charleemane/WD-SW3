@@ -17,6 +17,7 @@
     outline: 0px rgb(0, 0, 0) dotted;
     a {
         text-decoration: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     }
 }
 
@@ -73,6 +74,7 @@
     .buttons {
         display: flex;
         justify-content: space-evenly;
+        
     
             .headers {
                 /*background-image: linear-gradient(to right, #debd26, #e59f00, #ea7e00, #ec5600, #eb1212);*/
@@ -87,6 +89,14 @@
                 padding: 10px 40px 10px 40px;
                 font-weight: 300;
                 font-family: "Tiny5";
+            }
+
+            .headers:hover{
+                    filter: drop-shadow(-25px 8px 23px #e4c92f);
+            }
+
+            .footers:hover{
+                    filter: drop-shadow(-25px 8px 23px #e4c92f);
             }
     }
 }
