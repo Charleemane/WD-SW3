@@ -4,12 +4,17 @@
     src: url(https://fonts.googleapis.com/css2?family=Danfo&display=swap);
 }
 
+@font-face {
+    font-family: "Tiny5";
+    src: url(https://fonts.googleapis.com/css2?family=Tiny5&display=swap)
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: blueviolet;
-    outline: 1px black dotted;
+    background-color: rgb(0, 0, 0);
+    outline: 1px rgb(255, 255, 255) dotted;
 }
 
 .coc-logo {
@@ -17,34 +22,34 @@
     justify-self: flex-start;
     width: 250px;
     padding: 20px;
-
+    background-color: rgba(255, 255, 255, 0);
     &:hover {
-        filter: drop-shadow(10px 10px 5px 0px rgba(0,0,0,0.75));
+        filter: drop-shadow(-25px 8px 23px #e4c92f);
     }
 }
 
-.coc-troop:hover {
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-}
 
 
 .center{
-    display: grid;
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(3, 400px);
-    column-gap: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
 .coc-troop {
-    display: grid;
-    grid-column: 2;
+    width: 400px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    &:hover {
+        filter: drop-shadow(-25px 8px 23px #e4c92f);
+    }
 }
 
 .h1 {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    font-family: "Danfo", serif;
+    font-family: "Tiny5";
     font-weight: 700;
     font-size: 28pt;
 }
@@ -68,11 +73,17 @@
     justify-content: space-evenly;
 
         .headers {
+            background-image: linear-gradient(to right, #debd26, #e59f00, #ea7e00, #ec5600, #eb1212);
+            padding: 10px 40px 10px 40px;
             font-weight: 500;
+            font-family: "Tiny5";
         }
 
         .footers {
+            background-image: linear-gradient(to right, #debd26, #e59f00, #ea7e00, #ec5600, #eb1212);
+            padding: 10px 40px 10px 40px;
             font-weight: 300;
+            font-family: "Tiny5";
         }
 }
 
