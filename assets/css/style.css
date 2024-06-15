@@ -1,5 +1,5 @@
-@import url();
-@font-face {
+@import url(https://fonts.googleapis.com/css2?family=Danfo&display=swap,https://fonts.googleapis.com/css2?family=Tiny5&display=swap);
+/*@font-face {
     font-family: "Danfo";
     src: url(https://fonts.googleapis.com/css2?family=Danfo&display=swap);
 }
@@ -7,14 +7,17 @@
 @font-face {
     font-family: "Tiny5";
     src: url(https://fonts.googleapis.com/css2?family=Tiny5&display=swap)
-}
+}*/
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(0, 0, 0);
-    outline: 1px rgb(255, 255, 255) dotted;
+    background-color: rgb(255, 255, 255);
+    outline: 0px rgb(0, 0, 0) dotted;
+    a {
+        text-decoration: none;
+    }
 }
 
 .coc-logo {
@@ -52,38 +55,41 @@
     font-family: "Tiny5";
     font-weight: 700;
     font-size: 28pt;
+    
+    .texts {
+            .subtitle {
+                display: flex;
+                justify-content: flex-start;
+                font-size: 16pt;
+            }
+    
+            .p1 {
+                display: flex;
+                justify-content: flex-start;
+                font-size: 14pt;
+            }
+    }
+    
+    .buttons {
+        display: flex;
+        justify-content: space-evenly;
+    
+            .headers {
+                /*background-image: linear-gradient(to right, #debd26, #e59f00, #ea7e00, #ec5600, #eb1212);*/
+                background-image: linear-gradient(to right top, #e5d151, #e5d151, #eb1212);
+                padding: 10px 40px 10px 40px;
+                font-weight: 500;
+                font-family: "Tiny5";
+            }
+    
+            .footers {
+                background-image: linear-gradient(to right bottom, #debd26, #debd26, #eb1212);
+                padding: 10px 40px 10px 40px;
+                font-weight: 300;
+                font-family: "Tiny5";
+            }
+    }
 }
 
-.texts {
-        .subtitle {
-            display: flex;
-            justify-content: flex-start;
-            font-size: 16pt;
-        }
 
-        .p1 {
-            display: flex;
-            justify-content: flex-start;
-            font-size: 14pt;
-        }
-}
-
-.buttons {
-    display: flex;
-    justify-content: space-evenly;
-
-        .headers {
-            background-image: linear-gradient(to right, #debd26, #e59f00, #ea7e00, #ec5600, #eb1212);
-            padding: 10px 40px 10px 40px;
-            font-weight: 500;
-            font-family: "Tiny5";
-        }
-
-        .footers {
-            background-image: linear-gradient(to right, #debd26, #e59f00, #ea7e00, #ec5600, #eb1212);
-            padding: 10px 40px 10px 40px;
-            font-weight: 300;
-            font-family: "Tiny5";
-        }
-}
 
