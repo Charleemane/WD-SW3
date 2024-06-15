@@ -1,4 +1,13 @@
+@import url();
+@font-face {
+    font-family: "Danfo";
+    src: url(https://fonts.googleapis.com/css2?family=Danfo&display=swap);
+}
+
 * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     background-color: blueviolet;
     outline: 1px black dotted;
 }
@@ -9,27 +18,61 @@
     width: 250px;
     padding: 20px;
 
-    & :hover {
-        animation: forwards;
+    &:hover {
+        filter: drop-shadow(10px 10px 5px 0px rgba(0,0,0,0.75));
     }
+}
+
+.coc-troop:hover {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.center{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(3, 400px);
+    column-gap: 15px;
 }
 
 .coc-troop {
-    display: flex;
-    align-self: center;
-    justify-self: flex-start;
-    padding: 20px 0 0 250px;
-
-    & :hover {
-        box-shadow: 5rem;
-    }
+    display: grid;
+    grid-column: 2;
 }
 
-h1 {
+.h1 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    width: 100%;
-    align-self: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-family: "Danfo", serif;
+    font-weight: 700;
+    font-size: 28pt;
 }
+
+.texts {
+        .subtitle {
+            display: flex;
+            justify-content: flex-start;
+            font-size: 16pt;
+        }
+
+        .p1 {
+            display: flex;
+            justify-content: flex-start;
+            font-size: 14pt;
+        }
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+
+        .headers {
+            font-weight: 500;
+        }
+
+        .footers {
+            font-weight: 300;
+        }
+}
+
